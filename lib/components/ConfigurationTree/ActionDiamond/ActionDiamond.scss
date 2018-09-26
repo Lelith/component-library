@@ -1,7 +1,6 @@
-@import '../../styles/themify';
-@import '../../styles/variables';
+@import '../../../styles/themify';
 
-.configuration-tree-action {
+.action-diamond {
   width: 56px;
   height: 56px;
   display: flex;
@@ -20,7 +19,7 @@
 
     &:hover {
       @include themify($themes) {
-        border-color: themed('lightBg');
+        border-color: themed('actionPrimary');
       }
       transition: 
         border 3s cubic-bezier(0.19, 1, 0.22, 1),
@@ -30,7 +29,7 @@
   
   &--clicked {
     @include themify($themes) {
-      background-color: themed('light');
+      background-color: themed('actionSecondary');
     }
     transform: rotate(135deg);
     box-shadow: 7px -7px 0px 0px rgba(0, 0, 0, 0.25);
@@ -56,7 +55,7 @@
       width: 100%;
       height: 100%;
       @include themify($themes) {
-        fill: themed('lightBg');
+        fill: themed('actionPrimary');
       }
     }
   }
