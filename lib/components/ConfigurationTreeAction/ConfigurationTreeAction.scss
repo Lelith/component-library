@@ -1,0 +1,63 @@
+@import '../../styles/themify';
+@import '../../styles/variables';
+
+.configuration-tree-action {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 
+    border 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+    transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  
+  &--unclicked {
+    border-color: rgba(255, 255, 255, 0.098);
+    border-style: solid;
+    border-width: 2px;
+    transform: rotate(45deg);
+
+    &:hover {
+      @include themify($themes) {
+        border-color: themed('lightBg');
+      }
+      transition: 
+        border 3s cubic-bezier(0.19, 1, 0.22, 1),
+        transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+  
+  &--clicked {
+    @include themify($themes) {
+      background-color: themed('light');
+    }
+    transform: rotate(135deg);
+    box-shadow: 7px -7px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &--unclicked {
+      transform: rotate(-45deg);
+    }
+
+    &--clicked {
+      transform: rotate(-135deg);
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      @include themify($themes) {
+        fill: themed('lightBg');
+      }
+    }
+  }
+}
