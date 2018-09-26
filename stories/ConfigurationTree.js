@@ -31,9 +31,9 @@ const treeProps = {
   ],
 };
 
-storiesOf('D3A/Organisms/ConfigurationTree', module)
+storiesOf('D3A/ConfigurationTree', module)
   .add(
-    'Default',
+    'ConfigurationTree',
     withInfo(`
       ConfigurationTree
 

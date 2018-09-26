@@ -1,0 +1,53 @@
+@import '../../../styles/themify';
+
+.node-diamond {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  transform: rotate(45deg);
+
+
+  &--color1 {
+    @include themify($themes) {
+      border-color: themed('nodeColor1');
+    }
+
+    &:hover {
+      @include themify($themes) {
+        background-color: themed('nodeColor1');
+      }
+    }
+  }
+  &--color2 {
+    @include themify($themes) {
+      border-color: themed('nodeColor2');
+    }
+
+    &:hover {
+      @include themify($themes) {
+        background-color: themed('nodeColor2');
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+
+    svg {
+      width: auto;
+      @include themify($themes) {
+        fill: themed('light');
+      }
+    }
+  }
+}
