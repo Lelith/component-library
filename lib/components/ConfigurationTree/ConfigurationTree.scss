@@ -2,27 +2,47 @@
 
 .ct {
   display: flex;
+  // width: 100%;
   justify-content: center;
-  border: solid 1px yellow;
+  border-left: solid 1px yellow;
+  border-right: solid 1px yellow;
+  position: relative;
 
   &__container {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-
-  &__arrow {
-    background-color: pink;
+    overflow: hidden;
   }
 
   &__row {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     overflow: hidden;
   }
 
+  &__arrow {
+    display: flex;
+    justify-content: flex-end;
+    left: -16px;
+    position: absolute;
+    padding-top: 72px; // TODO computed?
+    cursor: pointer;
+    svg {
+      fill: #fff;
+      width: 16px;
+    }
+    &--right {
+      justify-content: flex-start;
+      right: -16px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
   .ct__node {
-    background-color: red;
+    // background-color: red;
     text-align: center;
     transition: margin-left 0.5s ease;
   }

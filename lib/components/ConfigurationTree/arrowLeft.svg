@@ -1,0 +1,6 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="a" d="M12 20l1.41 1.41L19 15.83V28h2V15.83l5.58 5.59L28 20l-8-8z"/>
+    </defs>
+    <use fill-rule="nonzero" transform="matrix(0 1 1 0 -12 -12)" xlink:href="#a"/>
+</svg>
