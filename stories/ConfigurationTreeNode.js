@@ -140,13 +140,12 @@ storiesOf('D3A/ConfigurationTree', module)
               downLine={{ show: true, active: false }}
             />
             <ConfigurationTreeNode
-              type="Storage"
+              type="Add"
               width="120px"
-              name="Storage"
-              rightLine={{ show: true, active: true }}
-              leftLine={{ show: true, active: false }}
-              upLine={{ show: true, active: false }}
-              downLine={{ show: true, active: true }}
+              rightLine={{ show: false }}
+              leftLine={{ show: false }}
+              upLine={{ show: false }}
+              downLine={{ show: false }}
             />
           </div>
         </div>
