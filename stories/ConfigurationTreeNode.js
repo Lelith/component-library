@@ -19,6 +19,7 @@ const wrapperStyle = {
 const rowStyle = {
   display: 'flex',
   justifyContent: 'space-around',
+  marginBottom: '10px',
 };
 
 class Container extends Component {
@@ -95,16 +96,58 @@ storiesOf('D3A/ConfigurationTree', module)
       <ThemeProvider theme="d3a">
         <div className="base" style={wrapperStyle}>
           <div style={rowStyle}>
-            <ConfigurationTreeNode type="Area" upLine={{ show: true, active: true }} downLine={{ show: true, active: true }} />
-            <ConfigurationTreeNode type="Area" leftLine={{ show: true, active: true }} upLine={{ show: true, active: true }} />
-            <ConfigurationTreeNode type="Area" rightLine={{ show: true, active: true }} upLine={{ show: true, active: true }} />
-            <NodeDiamond type="InfiniteDieselGenerator" />
+            <ConfigurationTreeNode
+              type="Area"
+              name="Example area"
+              width="120px"
+              upLine={{ show: true, active: true }}
+              downLine={{ show: true, active: true }}
+            />
+            <ConfigurationTreeNode
+              type="CellTower"
+              name="Example cell tower"
+              width="120px"
+              leftLine={{ show: true, active: true }}
+              upLine={{ show: true, active: true }}
+              downLine={{ show: true, active: true }}
+            />
+            <ConfigurationTreeNode
+              type="Storage"
+              width="120px"
+              name="Storage"
+              rightLine={{ show: true, active: true }}
+              downLine={{ show: true, active: true }}
+              upLine={{ show: true, active: true }}
+            />
           </div>
 
           <div style={rowStyle}>
-            <NodeDiamond type="Load" />
-            <NodeDiamond type="PV" />
-            <NodeDiamond type="Storage" />
+            <ConfigurationTreeNode
+              type="Area"
+              name="Example area"
+              width="120px"
+              upLine={{ show: true, active: true }}
+              downLine={{ show: true, active: true }}
+              rightLine={{ show: true, active: false }}
+              leftLine={{ show: true, active: false }}
+            />
+            <ConfigurationTreeNode
+              type="CellTower"
+              name="Example cell tower"
+              width="120px"
+              leftLine={{ show: true, active: false }}
+              upLine={{ show: true, active: false }}
+              downLine={{ show: true, active: false }}
+            />
+            <ConfigurationTreeNode
+              type="Storage"
+              width="120px"
+              name="Storage"
+              rightLine={{ show: true, active: true }}
+              leftLine={{ show: true, active: false }}
+              upLine={{ show: true, active: false }}
+              downLine={{ show: true, active: true }}
+            />
           </div>
         </div>
       </ThemeProvider>
