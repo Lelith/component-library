@@ -17,19 +17,25 @@ const containerStyle = {
 const treeProps = {
   nodes: [
     {
-      active: true,
       type: 'Area',
-      nodes: [{ type: 'Area' }, {
-        type: 'Storage',
-        active: true,
-        nodes: [{ type: 'Area' }, { type: 'Area', active: true }, { type: 'action' }],
-      }, { type: 'action' }],
+      // active: true,
+      // nodes: [{ type: 'Area' }, {
+      //   type: 'Storage',
+      //   active: true,
+      //   nodes: [{ type: 'Area' }, { type: 'Area', active: true }, { type: 'action' }],
+      // }, { type: 'action' }],
     },
     { type: 'PV' },
     { type: 'Storage' },
     { type: 'InfiniteDieselGenerator' },
     {
       type: 'Load',
+      active: true,
+      nodes: [{ type: 'Area' }, {
+        type: 'Storage',
+        active: true,
+        nodes: [{ type: 'Area' }, { type: 'Area', active: true }, { type: 'action' }],
+      }, { type: 'action' }],
     },
     { type: 'action' },
   ],
