@@ -4,6 +4,7 @@ import { withInfo } from '@storybook/addon-info';
 import {
   ActionDiamond,
   ConfigurationTreeNode,
+  NodeCard,
   NodeDiamond,
   ThemeProvider,
 } from '../lib';
@@ -149,6 +150,23 @@ storiesOf('D3A/ConfigurationTree', module)
               upLine={{ show: false }}
               downLine={{ show: false }}
             />
+          </div>
+        </div>
+      </ThemeProvider>
+    )),
+  )
+  .add(
+    'NodeCard',
+    withInfo(`
+      Node Card
+    `)(() => (
+      <ThemeProvider theme="d3a">
+        <div className="base" style={wrapperStyle}>
+          <div style={{ width: '300px' }}>
+            <NodeCard type="Area" name="Area" />
+            <NodeCard type="CellTower" name="Cell Tower" />
+            <NodeCard type="FiniteDieselGenerator" name="Finite Generator" />
+            <NodeCard type="InfiniteDieselGenerator" name="Infinite Generator" />
           </div>
         </div>
       </ThemeProvider>
