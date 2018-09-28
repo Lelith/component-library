@@ -7,7 +7,6 @@
   left: 100vw;
   transition: transform 0.2s;
   box-shadow: 5px 5px 0px 0px $box-shadow-color; 
-  cursor: pointer;
 
   @include themify($themes) {
     background-color: themed('modalBg');
@@ -23,6 +22,7 @@
     height: 20px;
     top: 10px;
     right: 10px;
+    cursor: pointer;
 
     svg {
       width: 100%;
