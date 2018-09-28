@@ -11,6 +11,9 @@
   border-width: 2px;
   transform: rotate(45deg);
 
+  &-wrapper {
+    margin: 11px;
+  }
 
   &--color1 {
     @include themify($themes) {

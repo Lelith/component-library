@@ -1,0 +1,21 @@
+@import '../../../styles/themify';
+
+.node-card {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    margin-left: 15px;
+    &--color1 {
+      @include themify($themes) {
+        color: themed('nodeColor1');
+      }
+    }
+
+    &--color2 {
+      @include themify($themes) {
+        color: themed('nodeColor2');
+      }
+    }
+  }
+}
