@@ -34,13 +34,15 @@ const treeProps = {
       active: true,
       nodes: [{ type: 'Area' }, {
         type: 'Storage',
-        active: true,
-        nodes: [{ type: 'Area' }, { type: 'Area', active: true }, { type: 'action' }],
       },
       { type: 'PV' },
       { type: 'Storage' },
       { type: 'PV' },
       { type: 'Storage' },
+      {
+        active: true,
+        nodes: [{ type: 'Area', test: true }, { type: 'Area', active: true }, { type: 'action' }],
+      },
       { type: 'PV' },
       { type: 'PV' },
       { type: 'action' },
