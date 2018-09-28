@@ -130,6 +130,7 @@ storiesOf('D3A/ConfigurationTree', module)
               downLine={{ show: true, active: true }}
               rightLine={{ show: true, active: false }}
               leftLine={{ show: true, active: false }}
+              clicked
             />
             <ConfigurationTreeNode
               type="CellTower"
@@ -138,6 +139,7 @@ storiesOf('D3A/ConfigurationTree', module)
               leftLine={{ show: true, active: false }}
               upLine={{ show: true, active: false }}
               downLine={{ show: true, active: false }}
+              clicked
             />
             <ConfigurationTreeNode
               type="Add"

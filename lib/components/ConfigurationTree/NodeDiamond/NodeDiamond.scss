@@ -23,6 +23,17 @@
       }
     }
   }
+
+  &--color1-clicked {
+    @include themify($themes) {
+      border-color: themed('nodeColor1');
+    }
+
+    @include themify($themes) {
+      background-color: themed('nodeColor1');
+    }
+  }
+
   &--color2 {
     @include themify($themes) {
       border-color: themed('nodeColor2');
@@ -32,6 +43,16 @@
       @include themify($themes) {
         background-color: themed('nodeColor2');
       }
+    }
+  }
+
+  &--color2-clicked {
+    @include themify($themes) {
+      border-color: themed('nodeColor2');
+    }
+
+    @include themify($themes) {
+      background-color: themed('nodeColor2');
     }
   }
 

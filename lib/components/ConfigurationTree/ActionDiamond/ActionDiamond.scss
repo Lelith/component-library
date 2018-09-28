@@ -1,4 +1,5 @@
 @import '../../../styles/themify';
+@import '../../../styles/variables';
 
 .action-diamond {
   width: 56px;
@@ -32,7 +33,7 @@
       background-color: themed('actionSecondary');
     }
     transform: rotate(135deg);
-    box-shadow: 7px -7px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px -7px 0px 0px $box-shadow-color;
   }
 
   &__icon {

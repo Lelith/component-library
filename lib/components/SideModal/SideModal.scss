@@ -1,0 +1,36 @@
+@import '../../styles/themify';
+@import '../../styles/variables';
+
+.side-modal {
+  position: absolute;
+  padding: 20px;
+  left: 100vw;
+  transition: transform 0.2s;
+  box-shadow: 5px 5px 0px 0px $box-shadow-color; 
+  cursor: pointer;
+
+  @include themify($themes) {
+    background-color: themed('modalBg');
+  }
+
+  &--visible {
+    transform: translateX(-100%);
+  }
+
+  &__close-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      @include themify($themes) {
+        fill: themed('lightBg');
+      }
+    }
+
+  }
+}
