@@ -9,7 +9,7 @@ const wrapperStyle = {
 };
 
 const containerStyle = {
-  width: '50%',
+  width: '80%',
   marginLeft: 'auto',
   marginRight: 'auto',
 };
@@ -18,16 +18,17 @@ const treeProps = {
   nodes: [
     {
       type: 'Area',
-      // active: true,
-      // nodes: [{ type: 'Area' }, {
-      //   type: 'Storage',
-      //   active: true,
-      //   nodes: [{ type: 'Area' }, { type: 'Area', active: true }, { type: 'action' }],
-      // }, { type: 'action' }],
     },
     { type: 'PV' },
     { type: 'Storage' },
-    { type: 'InfiniteDieselGenerator' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    { type: 'PV' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    {
+      type: 'InfiniteDieselGenerator',
+    },
     {
       type: 'Load',
       active: true,
@@ -35,9 +36,29 @@ const treeProps = {
         type: 'Storage',
         active: true,
         nodes: [{ type: 'Area' }, { type: 'Area', active: true }, { type: 'action' }],
-      }, { type: 'action' }],
+      },
+      { type: 'PV' },
+      { type: 'Storage' },
+      { type: 'PV' },
+      { type: 'Storage' },
+      { type: 'PV' },
+      { type: 'PV' },
+      { type: 'action' },
+      ],
     },
-    { type: 'action' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    { type: 'PV' },
+    { type: 'Storage' },
+    {
+      type: 'action',
+    },
   ],
 };
 

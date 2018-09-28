@@ -1,5 +1,13 @@
 @import '../../styles/themify';
 
+.ct-wrapper {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  &--hidden {
+    opacity: 0;
+  }
+}
+
 .ct {
   display: flex;
   // width: 100%;
@@ -19,7 +27,7 @@
     display: flex;
     // justify-content: center;
     overflow: hidden;
-    // transition: margin-left 0.5s ease;
+    transition: margin-left 0.5s ease;
   }
 
   &__arrow {
@@ -42,7 +50,7 @@
     }
   }
 
-  .ct__node {
+  &__node {
     // background-color: red;
     text-align: center;
     transition: margin-left 0.5s ease;
