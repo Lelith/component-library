@@ -2,11 +2,12 @@
 @import '../../styles/variables';
 
 .side-modal {
-  position: absolute;
+  position: fixed;
   padding: 20px;
   left: 100vw;
   transition: transform 0.2s;
   box-shadow: 5px 5px 0px 0px $box-shadow-color; 
+  z-index: 10;
 
   @include themify($themes) {
     background-color: themed('modalBg');
