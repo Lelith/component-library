@@ -137,9 +137,9 @@ storiesOf('D3A/ConfigurationTree', module)
               type="CellTower"
               name="Example cell tower"
               width="120px"
-              leftLine={{ show: true, active: false }}
+              leftLine={{ show: true, active: true }}
               upLine={{ show: true, active: false }}
-              downLine={{ show: true, active: false }}
+              rightLine={{ show: true, active: true }}
               clicked
             />
             <ConfigurationTreeNode
