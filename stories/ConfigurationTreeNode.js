@@ -6,6 +6,7 @@ import {
   ConfigurationTreeNode,
   NodeCard,
   NodeDiamond,
+  NodeParamsFormWrapper,
   ThemeProvider,
 } from '../lib';
 
@@ -167,6 +168,22 @@ storiesOf('D3A/ConfigurationTree', module)
             <NodeCard type="CellTower" name="Cell Tower" />
             <NodeCard type="FiniteDieselGenerator" name="Finite Generator" />
             <NodeCard type="InfiniteDieselGenerator" name="Infinite Generator" />
+          </div>
+        </div>
+      </ThemeProvider>
+    )),
+  )
+  .add(
+    'NodeParamsFormWrapper',
+    withInfo(`
+      Node Params Form Wrapper
+    `)(() => (
+      <ThemeProvider theme="d3a">
+        <div className="base" style={wrapperStyle}>
+          <div style={{ width: '300px', background: 'black' }}>
+            <NodeParamsFormWrapper type="Area" name="Area">
+              <span>Form fields</span>
+            </NodeParamsFormWrapper>
           </div>
         </div>
       </ThemeProvider>
