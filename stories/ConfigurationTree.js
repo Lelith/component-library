@@ -16,7 +16,6 @@ const containerStyle = {
 
 const treeProps = {
   nodes: [
-    { type: 'Area', name: 'Area' },
     { type: 'PV', name: 'PV' },
     { type: 'Storage', name: 'Storage' },
     { type: 'PV', name: 'PV' },
