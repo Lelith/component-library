@@ -43,11 +43,11 @@ const treeProps = {
         type: 'Area',
         name: 'Area',
         active: true,
-        nodes: [{ type: 'Area', name: 'Area', test: true }, { type: 'Area', name: 'Area', active: false }, { type: 'action' }],
+        nodes: [{ type: 'Add' }], /* { type: 'Area', name: 'Area', test: true }, { type: 'Area', name: 'Area', active: false }, */
       },
       { type: 'PV', name: 'PV' },
       { type: 'PV', name: 'PV' },
-      { type: 'action' },
+      { type: 'Add' },
       ],
     },
     { type: 'PV', name: 'PV' },
@@ -61,7 +61,7 @@ const treeProps = {
     { type: 'PV', name: 'PV' },
     { type: 'Storage', name: 'Storage' },
     {
-      type: 'action',
+      type: 'Add',
     },
   ],
 };
