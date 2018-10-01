@@ -19,7 +19,7 @@
     &__horizontal-line {
       border-style: solid;
       border-width: 2px 0px 0px 0px;
-      width: 50%;
+      width: calc(50% + 1px);
 
       &--active {
         @include themify($themes) {
@@ -32,6 +32,10 @@
         @include themify($themes) {
           border-color: themed('nodeColor1Inactive');
         }
+      }
+
+      &--right {
+        margin-left: -2px;
       }
     }
 
