@@ -14,12 +14,14 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    transition: border 0.5s;
 
     &__horizontal-line {
+      position: absolute;
+      top: 0;
+      transition: border 0.3s;
       border-style: solid;
       border-width: 2px 0px 0px 0px;
-      width: calc(50% + 1px);
+      width: calc(50% + 2px);
 
       &--active {
         @include themify($themes) {
@@ -34,12 +36,17 @@
         }
       }
 
+      &--left {
+        left: -1px;
+      }
+
       &--right {
-        margin-left: -2px;
+        right: -1px;
       }
     }
 
     &__vertical-line {
+      transition: border 0.3s;
       position: absolute;
       top: 0px;
       left: calc(50% - 1px);
@@ -52,6 +59,7 @@
         @include themify($themes) {
           border-color: themed('nodeColor1');
         }
+        z-index: 1;
       }
 
       &--inactive {
