@@ -181,7 +181,7 @@ storiesOf('D3A/ConfigurationTree', module)
       <ThemeProvider theme="d3a">
         <div className="base" style={wrapperStyle}>
           <div style={{ width: '300px', background: 'black' }}>
-            <NodeParamsFormWrapper type="Area" name="Area">
+            <NodeParamsFormWrapper type="Area" name="Area" count={2}>
               <span>Form fields</span>
             </NodeParamsFormWrapper>
           </div>
