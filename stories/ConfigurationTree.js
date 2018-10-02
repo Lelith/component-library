@@ -31,22 +31,22 @@ const treeProps = {
       type: 'Load',
       name: 'Load',
       active: true,
-      nodes: [{ type: 'Area', name: 'Area' }, {
-        type: 'Storage', name: 'Storage',
-      },
-      { type: 'PV', name: 'PV' },
-      { type: 'Storage', name: 'Storage' },
-      { type: 'PV', name: 'PV' },
-      { type: 'Storage', name: 'Storage' },
-      {
-        type: 'Area',
-        name: 'Area',
-        active: true,
-        nodes: [{ type: 'Add' }], /* { type: 'Area', name: 'Area', test: true }, { type: 'Area', name: 'Area', active: false }, */
-      },
-      { type: 'PV', name: 'PV' },
-      { type: 'PV', name: 'PV' },
-      { type: 'Add' },
+      nodes: [
+        { type: 'Area', name: 'Area' },
+        { type: 'Storage', name: 'Storage' },
+        { type: 'PV', name: 'PV' },
+        { type: 'Storage', name: 'Storage' },
+        { type: 'PV', name: 'PV' },
+        { type: 'Storage', name: 'Storage' },
+        {
+          type: 'Area',
+          name: 'Area',
+          active: true,
+          nodes: [{ type: 'Add', active: true }], /* { type: 'Area', name: 'Area', test: true }, { type: 'Area', name: 'Area', active: false }, */
+        },
+        { type: 'PV', name: 'PV' },
+        { type: 'PV', name: 'PV' },
+        { type: 'Add' },
       ],
     },
     { type: 'PV', name: 'PV' },
