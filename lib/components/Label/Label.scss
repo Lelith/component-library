@@ -7,7 +7,7 @@
     margin-bottom: 8px;
     font-size: $small;
     @include themify($themes) {
-      color: themed('secondary');
+      color: themed('label');
     }
   }
 }
