@@ -27,7 +27,7 @@
     display: flex;
     // justify-content: center;
     overflow: hidden;
-    transition: margin-left 0.5s ease;
+    transition: margin-left 0.5s ease, opacity 0.5s ease;
   }
 
   &__arrow {
@@ -55,4 +55,63 @@
     text-align: center;
     transition: margin-left 0.5s ease;
   }
+}
+
+.ct-transition-in-progress {
+  .ct-fade-children-enter {
+    height: 0px !important;
+    max-height: 0px;
+    margin: 0px !important;
+    position: absolute !important;
+  }
+}
+
+// main fade transition
+.ct-fade-enter {
+  opacity: 0.01;
+}
+.ct-fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.ct-fade-exit {
+  opacity: 1;
+}
+.ct-fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 250ms ease-in;
+}
+
+.ct-fade-appear {
+    opacity: 0.01;
+}
+
+.ct-fade-appear.ct-fade-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+// child nodes fade transition
+.ct-fade-children-enter {
+  opacity: 0.01;
+}
+.ct-fade-children-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.ct-fade-children-exit {
+  opacity: 1;
+}
+.ct-fade-children-exit-active {
+  opacity: 0.01;
+  transition: opacity 250ms ease-in;
+}
+
+.ct-fade-children-appear {
+    opacity: 0.01;
+}
+
+.ct-fade-children-appear.ct-fade-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
 }

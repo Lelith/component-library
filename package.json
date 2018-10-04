@@ -84,6 +84,7 @@
     "react-slider": "^0.11.2",
     "react-sliding-pane": "^2.0.2",
     "react-test-renderer": "^16.4.0",
+    "react-transition-group": "^2.5.0",
     "recharts": "^1.1.0",
     "sass-loader": "^6.0.7",
     "semantic-release-cli": "^4.0.4",

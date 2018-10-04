@@ -41,8 +41,8 @@ const treeProps = {
         {
           type: 'Area',
           name: 'Area',
-          active: true,
-          nodes: [{ type: 'Add', active: true }], /* { type: 'Area', name: 'Area', test: true }, { type: 'Area', name: 'Area', active: false }, */
+          active: false,
+          nodes: [{ type: 'Add', active: false }], /* { type: 'Area', name: 'Area', test: true }, { type: 'Area', name: 'Area', active: false }, */
         },
         { type: 'PV', name: 'PV' },
         { type: 'PV', name: 'PV' },
