@@ -58,7 +58,7 @@
 }
 
 .ct-transition-in-progress {
-  .ct-fade-children-enter {
+  > .ct-fade-children-enter {
     height: 0px !important;
     max-height: 0px;
     margin: 0px !important;
@@ -97,14 +97,15 @@
 }
 .ct-fade-children-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in;
+  transition: opacity 150ms ease-in;
+  transition-delay: 150ms;
 }
 .ct-fade-children-exit {
   opacity: 1;
 }
 .ct-fade-children-exit-active {
   opacity: 0.01;
-  transition: opacity 250ms ease-in;
+  transition: opacity 150ms ease-in;
 }
 
 .ct-fade-children-appear {
@@ -113,5 +114,5 @@
 
 .ct-fade-children-appear.ct-fade-appear-active {
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    transition: opacity 150ms ease-in;
 }
