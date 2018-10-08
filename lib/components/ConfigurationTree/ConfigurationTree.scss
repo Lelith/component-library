@@ -47,6 +47,9 @@
       svg {
         transform: rotate(180deg);
       }
+      .ct__badge {
+
+      }
     }
   }
 
@@ -60,7 +63,7 @@
     align-items: center;
     justify-content: center;
     top: 40px;
-    left: 8px;
+    left: calc(50% - 10.5px);
   }
 
   &__node {
