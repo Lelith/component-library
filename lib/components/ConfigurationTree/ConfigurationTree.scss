@@ -50,6 +50,19 @@
     }
   }
 
+  &__badge {
+    position: absolute;
+    background-color: #BFAA4E;
+    border-radius: 100%;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    left: 8px;
+  }
+
   &__node {
     // background-color: red;
     text-align: center;
