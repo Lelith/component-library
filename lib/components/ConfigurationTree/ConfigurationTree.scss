@@ -15,6 +15,7 @@
   // border-left: solid 1px yellow;
   // border-right: solid 1px yellow;
   position: relative;
+  transform: translateX(0);
 
   &__container {
     flex: 1;
