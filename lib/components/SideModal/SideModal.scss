@@ -3,10 +3,14 @@
 
 .side-modal {
   position: fixed;
-  padding: 20px;
+  top: 120px;
   left: 100vw;
+  height: 100%;
+  max-height: calc(100vh - 120px);
+  padding: 0 0 20px 20px;
   transition: transform 0.2s;
-  box-shadow: 5px 5px 0px 0px $box-shadow-color; 
+  box-shadow: 5px 5px 0px 0px $box-shadow-color;
+  overflow: hidden;
   z-index: 10;
 
   @include themify($themes) {
@@ -15,6 +19,14 @@
 
   &--visible {
     transform: translateX(-100%);
+  }
+
+  &__inner {
+    height: 100%;
+    max-height: 80vh;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    overflow-y: scroll;
   }
 
   &__close-button {
