@@ -76,9 +76,7 @@
     padding: 5px;
     text-align: center;
     line-height: 1.2;
-    @include themify($themes) {
-      color: themed('nodeColor1');
-    }
+    color: currentColor;
   }
 
   &-footer {
