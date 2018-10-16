@@ -47,7 +47,7 @@
 
   .inner-block__divider {
     display: block;
-    border-bottom: 1px solid color-modal-divider;
+    border-bottom: 1px solid $color-modal-divider;
     font-size: 14px;
     color: $color-modal-divider-text;
   }
