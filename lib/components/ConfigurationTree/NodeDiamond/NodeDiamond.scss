@@ -51,6 +51,7 @@
   &--color2 {
     @include themify($themes) {
       border-color: themed('nodeColor2');
+      color: themed('nodeColor2');
     }
 
     &:hover {
