@@ -32,8 +32,8 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
 
     svg {
@@ -43,6 +43,12 @@
         fill: themed('lightBg');
       }
     }
+  }
 
+  .inner-block__divider {
+    display: block;
+    border-bottom: 1px solid color-modal-divider;
+    font-size: 14px;
+    color: $color-modal-divider-text;
   }
 }
