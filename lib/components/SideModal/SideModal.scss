@@ -3,18 +3,26 @@
 
 .side-modal {
   position: fixed;
-  padding: 20px;
+  top: 120px;
   left: 100vw;
-  transition: transform 0.2s;
-  box-shadow: 5px 5px 0px 0px $box-shadow-color; 
   z-index: 10;
-
-  @include themify($themes) {
-    background-color: themed('modalBg');
-  }
+  max-height: calc(100vh - 240px);
+  padding: 0 0 20px 20px;
+  transition: transform 0.2s;
+  box-shadow: 5px 5px 0px 0px $box-shadow-color;
+  overflow: hidden;
+  background-color: $color-modal;
 
   &--visible {
     transform: translateX(-100%);
+  }
+
+  &__inner {
+    height: 100%;
+    max-height: calc(100vh - 240px);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow-y: scroll;
   }
 
   &__close-button {
@@ -32,6 +40,22 @@
         fill: themed('lightBg');
       }
     }
+  }
 
+  .node-card {
+    padding-left: 20px;
+  }
+
+  .inner-block__divider {
+    display: block;
+    border-bottom: 1px solid $color-modal-divider;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-modal-divider-text;
+
+    &:last-of-type {
+      margin: 20px 0 40px;
+    }
   }
 }

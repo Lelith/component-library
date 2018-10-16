@@ -1,3 +1,6 @@
+// Base Colors
+$color-white: white;
+
 // Sizings
 $h1: 42px;
 $h2: 28px;
@@ -18,6 +21,10 @@ $color-house: #135671;
 $color-device: #3199c2;
 $color-celltower: #833755;
 $color-generator: #388574;
+
+$color-modal: rgba(#327D99, .2);
+$color-modal-divider-text: #8DAEBC;
+$color-modal-divider: rgba($color-white, .1);
 
 /* VERBUND THEME */
 
@@ -43,9 +50,6 @@ $thin-weight: 100;
 
 // Paddings
 $card-padding: 20px;
-
-// Base Colors
-$color-white: white;
 
 // Dimensions
 $subtitle-offset: -34px;
