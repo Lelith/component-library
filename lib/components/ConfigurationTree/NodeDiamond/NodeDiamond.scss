@@ -35,6 +35,22 @@
     }
   }
 
+  &__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+
+    svg {
+      width: auto;
+      @include themify($themes) {
+        fill: themed('light');
+      }
+    }
+  }
+
   &--circle {
     padding: 36px;
     border-radius: 50%;
@@ -64,6 +80,24 @@
     box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
   }
 
+  &--color1-active {
+    @include themify($themes) {
+      border-color: themed('nodeColor1');
+    }
+
+    @include themify($themes) {
+      background-color: themed('nodeColor1Active');
+    }
+
+    svg {
+      @include themify($themes) {
+        fill: themed('nodeColor1');
+      }
+    }
+
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
+  }
+
   &--color2 {
     @include themify($themes) {
       border-color: themed('nodeColor2');
@@ -86,21 +120,5 @@
     }
 
     box-shadow: 5px 5px 10px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
-  }
-
-  &__icon {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-45deg);
-
-    svg {
-      width: auto;
-      @include themify($themes) {
-        fill: themed('light');
-      }
-    }
   }
 }
