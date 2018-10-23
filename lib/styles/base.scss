@@ -9,7 +9,9 @@
 
 %base {
   @include themify($themes) {
-    background: themed('bgColor');
+    background: themed('bgBase');
+    background-image: themed('bgColor');
+    background-blend-mode: multiply;
     color: themed('textcolor');
     font-family: themed('fontFamily');
   }
