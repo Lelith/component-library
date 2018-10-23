@@ -17,6 +17,15 @@
   position: relative;
   transform: translateX(0);
 
+  &__breadcrumbs {
+    position: relative;
+    justify-content: center;
+    display: none;
+    &--visible {
+      display: flex;
+    }
+  }
+
   &__container {
     flex: 1;
     display: flex;
