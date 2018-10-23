@@ -4,7 +4,7 @@
 .side-modal {
   position: fixed;
   top: 120px;
-  left: calc(100vw - 20px);
+  left: 100vw;
   z-index: 10;
   max-height: calc(100vh - 240px);
   padding: 0 0 20px 20px;
@@ -14,7 +14,7 @@
   background-color: $color-modal;
 
   &--visible {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 20px));
   }
 
   &__inner {
