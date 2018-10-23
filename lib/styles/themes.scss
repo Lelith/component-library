@@ -8,7 +8,8 @@ $themes: (
     secondary: #35d7c6, // second highlight
 
     // Background colors
-    bgColor: radial-gradient(#10455c 60%, #00171f),
+    bgColor: radial-gradient(49% 118%, rgba(255,255,255,0.50) 53%, rgba(0,0,0,0.50) 100%),
+    bgBase: #135671,
     cardBg: rgba(0, 0, 0, 0.06),
     darkBg: #043d53,
     lightBg: #3a657f,
@@ -56,8 +57,9 @@ $themes: (
     nodeColor1Inactive: #336c7c,
     nodeColor2: #BFAA4E,
     modalBg: #0f3a4d,
-    inputBg: #16475c,
-    inputBg2: #3199c2,
+    inputBg: rgba(50, 125, 153, .2),
+    inputBorder: #327D99,
+    inputBg2: rgba(50, 125, 153, .2),
     // error: #961D46,
     error: #C26161,
     errorLight: #C26161,

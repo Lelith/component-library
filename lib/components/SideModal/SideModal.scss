@@ -7,7 +7,7 @@
   left: 100vw;
   z-index: 10;
   max-height: calc(100vh - 240px);
-  padding: 0 0 20px 20px;
+  padding: 20px;
   transition: transform 0.2s;
   box-shadow: 5px 5px 0px 0px $box-shadow-color;
   overflow: hidden;
@@ -20,8 +20,6 @@
   &__inner {
     height: 100%;
     max-height: calc(100vh - 240px);
-    padding-bottom: 10px;
-    padding-top: 10px;
     overflow-y: scroll;
   }
 
