@@ -64,6 +64,18 @@
     box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
   }
 
+  &--color1-active {
+    @include themify($themes) {
+      border-color: themed('nodeColor1');
+    }
+
+    @include themify($themes) {
+      background-color: black; // TODO
+    }
+
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
+  }
+
   &--color2 {
     @include themify($themes) {
       border-color: themed('nodeColor2');
@@ -83,6 +95,18 @@
 
     @include themify($themes) {
       background-color: themed('nodeColor2');
+    }
+
+    box-shadow: 5px 5px 10px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
+  }
+
+  &--color2-active {
+    @include themify($themes) {
+      border-color: themed('nodeColor2');
+    }
+
+    @include themify($themes) {
+      background-color: black; // TODO
     }
 
     box-shadow: 5px 5px 10px 10px 0 rgba(0,0,0,0.10), 6px 6px 0 0 rgba(0,0,0,0.20), 10px 10px 50px 0 rgba(53,215,198,0.20), 5px 5px 20px 0 rgba(53,215,198,0.20);
