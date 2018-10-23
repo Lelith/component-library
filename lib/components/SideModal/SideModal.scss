@@ -4,7 +4,7 @@
 .side-modal {
   position: fixed;
   top: 120px;
-  left: 100vw;
+  left: calc(100vw - 20px);
   z-index: 10;
   max-height: calc(100vh - 240px);
   padding: 0 0 20px 20px;
