@@ -3,23 +3,26 @@
 
 .side-modal {
   position: fixed;
-  top: 120px;
+  top: 50%;
   left: 100vw;
   z-index: 10;
   max-height: calc(100vh - 240px);
   padding: 20px;
-  transition: transform 0.2s;
+  transition: 0.2s;
   box-shadow: 5px 5px 0px 0px $box-shadow-color;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: $color-modal;
 
   &--visible {
-    transform: translateX(calc(-100% - 20px));
+    transform: translate(calc(-100% - 20px), -50%);
+  }
+
+  &--hidden {
+    transform: translate(0, -50%);
   }
 
   &__inner {
     height: 100%;
-    max-height: calc(100vh - 240px);
     overflow-y: scroll;
   }
 
